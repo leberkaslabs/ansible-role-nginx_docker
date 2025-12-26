@@ -20,7 +20,7 @@ nginx_docker_group: root
 nginx_docker_default_config: "{{ lookup('ansible.builtin.template', 'default.conf.j2') }}"
 
 # TLS Certificates for NGINX
-# These will be placed inside the container under /etc/nginx/certs.
+# These will be placed inside the container under /etc/nginx/ssl.
 nginx_docker_certs: []
   # TLS certificate loaded from the inventory directory
   # Required for enabling HTTPS on the Nginx container
@@ -44,8 +44,8 @@ nginx_docker_config: []
   #
   #         server_name _;
   #
-  #         ssl_certificate /tls.crt;
-  #         ssl_certificate_key /tls.key;
+  #         ssl_certificate /etc/nginx/ssl/tls.crt;
+  #         ssl_certificate_key /etc/nginx/ssl/tls.key;
   #
   #         client_max_body_size 525M;
   #

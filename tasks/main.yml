@@ -8,8 +8,8 @@
     mode: "0750"
   loop:
     - "{{ nginx_docker_path }}"
-    - "{{ nginx_docker_path }}/certs"
     - "{{ nginx_docker_path }}/conf.d"
+    - "{{ nginx_docker_path }}/ssl"
 
 - name: Create NGINX docker default configuration
   ansible.builtin.copy:
@@ -38,7 +38,7 @@
 - name: Manage NGINX docker custom certificates
   ansible.builtin.copy:
     content: "{{ item.content }}"
-    dest: "{{ nginx_docker_path }}/certs/{{ item.name }}"
+    dest: "{{ nginx_docker_path }}/ssl/{{ item.name }}"
     owner: "{{ nginx_docker_owner }}"
     group: "{{ nginx_docker_group }}"
     mode: "0600"
