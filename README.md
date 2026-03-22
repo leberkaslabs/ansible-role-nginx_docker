@@ -1,6 +1,6 @@
-# Ansible Role: NGINX (Docker)
+# Ansible Role: Nginx_docker
 
-[![Ansible Molecule](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint-action.yml/badge.svg)](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint-action.yml)
+[![Ansible Lint](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint-action.yml/badge.svg)](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint-action.yml)
 
 Setup NGINX with Docker Compose.
 
@@ -16,11 +16,9 @@ The default values for the variables are set in [defaults/main.yml](defaults/mai
 ```yaml
 - hosts: all
   roles:
-    - role: dudecalledbro.nginx_docker
+    - role: leberkaslabs.nginx_docker
 ```
 
 ## License
 
-Copyright © 2025 Niclas Spreng
-
-Licensed under the [MIT license](LICENSE).
+Copyright (c) 2026 Niclas Spreng

@@ -1,9 +1,9 @@
 ---
 argument_specs:
   main:
-    short_description: nginx_docker
+    author: Niclas Spreng
     description: Setup NGINX with Docker Compose.
-    author: dudecalledbro
+    short_description: nginx_docker
     options:
       nginx_docker_image:
         type: str
