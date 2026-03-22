@@ -1,4 +1,4 @@
-# Ansible Role: Nginx_docker
+# Ansible Role: nginx_docker
 
 [![Ansible Lint](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint-action.yml/badge.svg)](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint-action.yml)
 
