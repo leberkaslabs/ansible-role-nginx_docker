@@ -4,14 +4,15 @@ dependency:
 driver:
   name: vagrant
   provider:
-    name: parallels
+    name: qemu
 platforms:
   - name: instance
-    box: bento/debian-12
-    memory: 1024
+    # yamllint disable-line rule:quoted-strings
+    box: "${VAGRANT_BOX:-cloud-image/debian-12}"
+    memory: 2048
     cpus: 1
 provisioner:
   name: ansible
   connection_options:
-    ansible_ssh_user: vagrant
     ansible_become: true
+    ansible_ssh_user: vagrant

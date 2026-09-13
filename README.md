@@ -1,6 +1,6 @@
 # Ansible Role: nginx_docker
 
-[![Ansible Lint](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint-action.yml/badge.svg)](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint-action.yml)
+[![Ansible Lint](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint.yml/badge.svg)](https://github.com/leberkaslabs/ansible-role-nginx_docker/actions/workflows/ansible-lint.yml)
 
 Setup NGINX with Docker Compose.
 

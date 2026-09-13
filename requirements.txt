@@ -1,7 +1,10 @@
 # Python requirements for executing
 ansible
 ansible-lint
-docker
-molecule
-molecule-plugins[docker]
+j2lint
 yamllint
+
+# Molecule requirements
+molecule
+molecule-plugins[vagrant]
+python-vagrant

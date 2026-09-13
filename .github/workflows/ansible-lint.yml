@@ -11,16 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
-          # yamllint disable-line rule:quoted-strings
-          python-version: '3.x'
+          python-version: '3.13'
 
       - name: Install Python dependencies
-        run: pip3 install ansible ansible-lint
+        run: pip3 install -r requirements.txt
 
       - name: Run Ansible Lint
         run: ansible-lint . || true
